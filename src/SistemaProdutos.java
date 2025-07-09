@@ -3,6 +3,7 @@ import java.util.Scanner;
 
 class Produto {
     String nome;
+
     int quantidade;
 
     Produto(String nome, int quantidade) {
@@ -23,16 +24,16 @@ public class SistemaProdutos {
         ArrayList<Produto> listaProdutos = new ArrayList<>();
 
         while (true) {
-            System.out.println("\n====== MENU DE PRODUTOS ======");
+            System.out.println("\n-=-= MENU DE PRODUTOS =-=-");
             System.out.println("1 - Cadastrar produto");
             System.out.println("2 - Listar produtos");
             System.out.println("3 - Sair");
             System.out.print("Escolha uma opção: ");
             int opcao = scanner.nextInt();
-            scanner.nextLine(); // limpar buffer
+            scanner.nextLine(); // limpeza de buffer
 
             if (opcao == 1) {
-                System.out.println("\n--- Cadastro de Produto ---");
+                System.out.println("\n-- Cadastro de Produto --");
                 System.out.print("Nome do produto: ");
                 String nome = scanner.nextLine();
                 System.out.print("Quantidade: ");
